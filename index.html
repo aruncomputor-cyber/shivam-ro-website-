@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Shivam RO Home Service & Repair - Shahdol में RO Repair, Service, Filter Change और Installation की Home Service.">
+
+<title>Shivam RO | Home Service & Repair | Shahdol</title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f9fc;
+    color:#17324d;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#0066b3,#00a6e8);
+    color:white;
+    padding:18px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:bold;
+}
+
+.logo span{
+    display:block;
+    font-size:14px;
+    font-weight:normal;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    background:white;
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    padding:60px 8%;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero h1{
+    color:#006fba;
+    font-size:46px;
+    line-height:1.2;
+    margin-bottom:18px;
+}
+
+.hero h2{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.hero-image{
+    width:430px;
+    max-width:100%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    color:white;
+}
+
+.call{
+    background:#006fba;
+}
+
+.whatsapp{
+    background:#159447;
+}
+
+.booking-btn{
+    background:#ff8c00;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+section{
+    padding:60px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    color:#006fba;
+    font-size:32px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:28px 20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card-icon{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    color:#006fba;
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why{
+    background:#eaf7ff;
+}
+
+.why-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price-grid{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.price-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price{
+    color:#159447;
+    font-size:21px;
+    font-weight:bold;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking{
+    background:#eaf7ff;
+}
+
+.booking-box{
+    background:white;
+    max-width:650px;
+    margin:auto;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.1);
+}
+
+.booking-form{
+    display:grid;
+    gap:15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking-form textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+.booking-form button{
+    border:none;
+    background:#159447;
+    color:white;
+    padding:15px;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+.review-grid{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.review{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.stars{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location{
+    background:#eaf7ff;
+    text-align:center;
+}
+
+.map-button{
+    display:inline-block;
+    background:#006fba;
+    color:white;
+    padding:14px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#006fba;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.contact-phone{
+    color:white;
+    font-size:27px;
+    font-weight:bold;
+    display:inline-block;
+    margin-top:10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#004d80;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/* =========================
+   FLOATING BUTTONS
+========================= */
+
+.floating{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    z-index:999;
+}
+
+.float-btn{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
+}
+
+.float-call{
+    background:#006fba;
+}
+
+.float-whatsapp{
+    background:#159447;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:45px 5%;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero-image{
+        width:500px;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .review-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    section{
+        padding:45px 5%;
+    }
+
+    nav{
+        gap:12px;
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero h2{
+        font-size:20px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .price-grid{
+        grid-template-columns:1fr;
+    }
+
+    .price-card{
+        flex-direction:column;
+        gap:8px;
+        text-align:center;
+    }
+
+    .booking-box{
+        padding:22px 16px;
+    }
+
+    .section-title h2{
+        font-size:27px;
+    }
+
+    .floating{
+        right:12px;
+        bottom:12px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+💧 Shivam RO
+
+<span>Home Service & Repair</span>
+
+</div>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#services">Services</a>
+
+<a href="#prices">Prices</a>
+
+<a href="#booking">Booking</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+<h1>
+Shivam RO
+<br>
+Home Service & Repair
+</h1>
+
+<h2>
+RO Service अब आपके घर पर
+</h2>
+
+<p>
+🔧 RO Repair &nbsp; | &nbsp;
+💧 RO Service
+</p>
+
+<p>
+🔄 Filter Change &nbsp; | &nbsp;
+⚙️ RO Installation
+</p>
+
+<p>
+📍 Shahdol, Madhya Pradesh
+</p>
+
+
+<div class="buttons">
+
+<a class="btn call"
+href="tel:9399898209">
+
+📞 Call Now
+
+</a>
+
+
+<a class="btn whatsapp"
+href="https://wa.me/919399898209">
+
+💬 WhatsApp
+
+</a>
+
+
+<a class="btn booking-btn"
+href="#booking">
+
+📋 Book Service
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+<img src="images/ro.jpeg"
+
+alt="Shivam RO Home Service">
+
+</div>
+
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="section-title">
+
+<h2>हमारी RO Services</h2>
+
+<p>घर बैठे RO की सुविधाएँ</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="card">
+
+<div class="card-icon">🔧</div>
+
+<h3>RO Repair</h3>
+
+<p>
+RO में खराबी की जांच और Repair Service.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">💧</div>
+
+<h3>RO Service</h3>
+
+<p>
+RO Cleaning और Complete Service.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🔄</div>
+
+<h3>Filter Change</h3>
+
+<p>
+RO Filter और Membrane Change.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">⚙️</div>
+
+<h3>RO Installation</h3>
+
+<p>
+नए RO की Installation Service.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- WHY CHOOSE -->
+
+<section class="why">
+
+<div class="section-title">
+
+<h2>⭐ क्यों चुनें Shivam RO?</h2>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="card">
+
+<div class="card-icon">🏠</div>
+
+<h3>Home Service</h3>
+
+<p>
+आपके घर पर Service.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">⚡</div>
+
+<h3>Fast Service</h3>
+
+<p>
+समय पर Service देने की कोशिश.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🔧</div>
+
+<h3>Repair Service</h3>
+
+<p>
+RO की विभिन्न समस्याओं की जांच.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">📍</div>
+
+<h3>Shahdol Service</h3>
+
+<p>
+Shahdol और आसपास के क्षेत्र में.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PRICE -->
+
+<section id="prices">
+
+<div class="section-title">
+
+<h2>💰 Service Charges</h2>
+
+<p>अनुमानित कीमतें</p>
+
+</div>
+
+
+<div class="price-grid">
+
+
+<div class="price-card">
+
+<div>
+
+<h3>🔧 RO General Service</h3>
+
+</div>
+
+<div class="price">
+₹ ___ से
+</div>
+
+</div>
+
+
+<div class="price-card">
+
+<div>
+
+<h3>🔄 RO Filter Change</h3>
+
+</div>
+
+<div class="price">
+₹ ___ से
+</div>
+
+</div>
+
+
+<div class="price-card">
+
+<div>
+
+<h3>💧 RO Membrane Change</h3>
+
+</div>
+
+<div class="price">
+₹ ___ से
+</div>
+
+</div>
+
+
+<div class="price-card">
+
+<div>
+
+<h3>⚙️ RO Installation</h3>
+
+</div>
+
+<div class="price">
+₹ ___ से
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- BOOKING -->
+
+<section class="booking" id="booking">
+
+<div class="section-title">
+
+<h2>📋 RO Service Book करें</h2>
+
+<p>अपनी जानकारी भरें और WhatsApp पर भेजें</p>
+
+</div>
+
+
+<div class="booking-box">
+
+<form class="booking-form"
+onsubmit="sendWhatsApp(); return false;">
+
+
+<input
+type="text"
+id="name"
+placeholder="आपका नाम"
+required>
+
+
+<input
+type="tel"
+id="phone"
+placeholder="मोबाइल नंबर"
+required>
+
+
+<input
+type="text"
+id="address"
+placeholder="आपका पता"
+required>
+
+
+<select id="service" required>
+
+<option value="">
+Service चुनें
+</option>
+
+<option>RO Repair</option>
+
+<option>RO Service</option>
+
+<option>Filter Change</option>
+
+<option>Membrane Change</option>
+
+<option>RO Installation</option>
+
+</select>
+
+
+<textarea
+id="message"
+placeholder="अपनी समस्या लिखें">
+</textarea>
+
+
+<button type="submit">
+
+💬 WhatsApp पर Booking भेजें
+
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- REVIEWS -->
+
+<section>
+
+<div class="section-title">
+
+<h2>⭐ Customer Reviews</h2>
+
+</div>
+
+
+<div class="review-grid">
+
+
+<div class="review">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“RO की Service अच्छी मिली और घर पर ही काम हो गया।”
+</p>
+
+<br>
+
+<b>— Customer, Shahdol</b>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“समय पर Service मिली और काम भी अच्छा हुआ।”
+</p>
+
+<br>
+
+<b>— Customer, Shahdol</b>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“RO Repair के लिए अच्छी Home Service.”
+</p>
+
+<br>
+
+<b>— Customer, Shahdol</b>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- LOCATION -->
+
+<section class="location">
+
+<div class="section-title">
+
+<h2>📍 हमारा Service Area</h2>
+
+<p>
+Shahdol, Madhya Pradesh
+</p>
+
+</div>
+
+
+<a
+class="map-button"
+href="https://www.google.com/maps/search/?api=1&query=Shahdol,Madhya+Pradesh"
+target="_blank">
+
+📍 Google Maps पर देखें
+
+</a>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>
+आज ही संपर्क करें
+</h2>
+
+<p>
+Shivam RO Home Service & Repair
+</p>
+
+<p>
+📍 Shahdol, Madhya Pradesh
+</p>
+
+
+<a
+class="contact-phone"
+href="tel:9399898209">
+
+📞 93998 98209
+
+</a>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Shivam RO Home Service & Repair
+</p>
+
+<p>
+Shahdol, Madhya Pradesh
+</p>
+
+</footer>
+
+
+
+<!-- FLOATING BUTTONS -->
+
+<div class="floating">
+
+
+<a
+class="float-btn float-call"
+href="tel:9399898209"
+title="Call">
+
+📞
+
+</a>
+
+
+<a
+class="float-btn float-whatsapp"
+href="https://wa.me/919399898209"
+title="WhatsApp">
+
+💬
+
+</a>
+
+
+</div>
+
+
+
+<!-- WHATSAPP SCRIPT -->
+
+<script>
+
+function sendWhatsApp(){
+
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let address =
+document.getElementById("address").value;
+
+let service =
+document.getElementById("service").value;
+
+let problem =
+document.getElementById("message").value;
+
+
+let text =
+"नमस्ते Shivam RO,%0A%0A" +
+
+"मुझे RO Service चाहिए।%0A%0A" +
+
+"नाम: " + name + "%0A" +
+
+"मोबाइल: " + phone + "%0A" +
+
+"पता: " + address + "%0A" +
+
+"Service: " + service + "%0A" +
+
+"समस्या: " + problem;
+
+
+window.open(
+"https://wa.me/919399898209?text=" + text,
+"_blank"
+);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
